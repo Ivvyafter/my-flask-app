@@ -3,13 +3,13 @@ pipeline {
 
     environment {
         DOCKERHUB_CREDENTIALS = credentials('dockerhub-credentials-id')
-        DOCKER_IMAGE = 'your-dockerhub-username/my-flask-app'
+        DOCKER_IMAGE = 'underplex/my-flask-app'
     }
 
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/your-username/my-flask-app.git'
+                git 'https://github.com/ivvyafter/my-flask-app.git'
             }
         }
 
